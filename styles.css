@@ -9,28 +9,41 @@ body {
     height: 100vh;
 }
 
-#app {
+#results {
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 300px;
 }
 
-h1 {
+h3 {
     text-align: center;
 }
 
 .game {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    width: 100%;
     border-bottom: 1px solid #ddd;
+    margin-bottom: 50px; /* Added margin for vertical space */
 }
 
 .team {
     flex: 1;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.team svg {
+    width: 30px; 
+    height: 30px; 
+    margin-left: 8px; 
+}
+
 
 .score {
     font-weight: bold;
@@ -38,18 +51,27 @@ h1 {
 
 #pagination {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #pagination button {
     padding: 10px;
-    margin: 0 5px;
     cursor: pointer;
+    background-color: #33B667;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 #pagination button:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+}
+
+#page-info {
+    flex-grow: 1;
+    text-align: center;
 }
