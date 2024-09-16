@@ -1,12 +1,24 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    gap: 3vw;
+}
+
+.navbar {
+    background-color: #33B667;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
+.navbar > h2{
+    color: white;
 }
 
 #results {
@@ -16,6 +28,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 300px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 h3 {
@@ -25,34 +41,42 @@ h3 {
 .game {
     display: flex;
     justify-content: space-between;
+    align-items: center; 
     width: 100%;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 50px; /* Added margin for vertical space */
+    padding-bottom: 10px;
+    margin-bottom: 50px; 
 }
 
 .team {
-    flex: 1;
-    text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
 }
 
 .team svg {
     width: 30px; 
     height: 30px; 
-    margin-left: 8px; 
+    margin-right: 8px; 
 }
 
-
 .score {
+    display: flex;
+    align-items: center; 
     font-weight: bold;
+    margin: 0 10px;
+    gap: 10px; 
+}
+
+.separator{
+    font-weight: lighter;
+    color: gray;
 }
 
 #pagination {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%; 
     margin-bottom: 20px;
 }
 
