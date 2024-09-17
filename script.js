@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             gamesContainer.appendChild(gameElement);
         });
-        pageInfo.textContent = `Round ${round.round}`;
+        pageInfo.textContent = `Rodada ${round.round}`;
     }
 
     function updatePaginationControls() {
